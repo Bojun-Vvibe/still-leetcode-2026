@@ -13,8 +13,8 @@ README = Path(__file__).resolve().parent.parent / "README.md"
 SECTION_PREFIX = "## 📊 公司清单"
 STATUS_TOKENS = {"✅", "🟡", "❌", "❓"}
 DATE_RE = re.compile(r"^\d{4}-\d{2}$")
-EXPECTED_COLS = 7
-COL_NAMES = ["公司", "是否面 LC", "面试形式", "难度", "AI 工具政策", "信息来源", "更新时间"]
+EXPECTED_COLS = 8
+COL_NAMES = ["公司", "部门 / 业务", "是否面 LC", "面试形式", "难度", "AI 工具政策", "信息来源", "更新时间"]
 
 
 def split_row(line: str):
@@ -71,10 +71,12 @@ def main() -> int:
             errors.append(f"{prefix} 列数为 {len(cells)}，应为 {EXPECTED_COLS}：{line.strip()}")
             continue
 
-        company, asks, fmt, diff, ai, source, date = cells
+        company, dept, asks, fmt, diff, ai, source, date = cells
 
         if not company:
             errors.append(f"{prefix} 公司名为空")
+        if not dept:
+            errors.append(f"{prefix} 「部门 / 业务」为空（不确定请填「未知」）")
         if not any(tok in asks for tok in STATUS_TOKENS):
             errors.append(f"{prefix} 「是否面 LC」缺少 ✅/🟡/❌/❓ 之一，实际：{asks!r}")
         if not fmt:

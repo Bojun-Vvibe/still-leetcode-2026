@@ -20,18 +20,21 @@ This is an **open, contribution-driven** list. Share your own interview experien
 ## 📊 Company List
 
 > Legend: ✅ = still primarily LC-style algorithms ｜ 🟡 = partial / depends on role ｜ ❌ = mostly no pure algorithms ｜ ❓ = not enough data
+>
+> **A big company's teams differ wildly**, so the list is keyed by **team / org**, not just company. The [Chinese README](README.md) holds the canonical, most up-to-date data; this page mirrors a snapshot.
 
-| Company | Asks LC? | Interview Format | Difficulty | AI Tool Policy | Source | Updated |
-|---------|:--------:|------------------|------------|----------------|--------|:-------:|
-| Example · ByteDance | ✅ | Onsite whiteboard + OA | Med-Hard | AI banned in interview | Interview report | 2026-05 |
-| Example · An AI startup | ❌ | System design + real project | — | Copilot encouraged | Community | 2026-06 |
-| Example · A foreign company | 🟡 | Depends on role; SDE still LC | Med | Docs allowed | Friend's interview | 2026-04 |
+| Company | Team / Org | Asks LC? | Interview Format | Difficulty | AI Tool Policy | Source | Updated |
+|---------|-----------|:--------:|------------------|------------|----------------|--------|:-------:|
+| Alibaba | New-grad · multiple roles | ✅ | 2–3 coding problems + 1–2 live algo | Med-Hard | Unknown | Recruiting guide | 2026-04 |
+| Cursor (Anysphere) | Whole company (eng / design) | ❌ | 2-day onsite project on the real codebase | — | No AI in interview (autocomplete only) | Multiple reports | 2025-11 |
+| Meta | Some coding roles (pilot) | 🟡 | Still coding problems, but AI assistant allowed | Med | AI allowed for some roles | Wired / 404 / BI | 2025-07 |
+| Xiaohongshu (RED) | Recommendation algo | ✅ | Live algorithm + project + fundamentals | Med | Unknown | Nowcoder report | 2025-11 |
 
-<!-- Insert your company below this line, in alphabetical order. Please keep the example rows for reference. -->
+<!-- Insert your company below this line. Split a big company into multiple rows by team. -->
 
 > Want to add a company? See [How to Contribute](#-how-to-contribute). **Just edit one table row.**
 
-> The canonical, most up-to-date data lives in the [Chinese README](README.md), where most contributions happen. This English page mirrors it.
+> The canonical, most up-to-date data (with source footnotes) lives in the [Chinese README](README.md), where most contributions happen.
 
 ---
 

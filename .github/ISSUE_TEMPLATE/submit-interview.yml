@@ -16,6 +16,14 @@ body:
       placeholder: 例：美团
     validations:
       required: true
+  - type: input
+    id: department
+    attributes:
+      label: 部门 / 业务线
+      description: 大厂不同组风格差异极大，这一项很关键。如「抖音·推荐」「后端开发」「校招·多岗」。实在不清楚填「未知」。
+      placeholder: 例：到店事业群·后端
+    validations:
+      required: true
   - type: dropdown
     id: asks_lc
     attributes:
