@@ -2,6 +2,11 @@
 
 **简体中文** ｜ [English](README.en.md)
 
+[![校验表格](https://github.com/Bojun-Vvibe/still-leetcode-2026/actions/workflows/validate.yml/badge.svg)](https://github.com/Bojun-Vvibe/still-leetcode-2026/actions/workflows/validate.yml)
+[![贡献者](https://img.shields.io/github/contributors/Bojun-Vvibe/still-leetcode-2026)](https://github.com/Bojun-Vvibe/still-leetcode-2026/graphs/contributors)
+[![欢迎 PR](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![数据许可 CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-blue.svg)](LICENSE-DATA)
+
 > 「2026 年还在面 LeetCode 的公司不值得一去」——真的吗？
 >
 > 在 AI 时代，面试的目的正在改变。手撕算法到底还有没有意义？纯背题、纯手写还剩多少？哪些公司转向了**实战编码 / 系统设计 / AI 结对**？这个 repo 想给中文社区的开发者一个**透明、可交流、众包**的答案。

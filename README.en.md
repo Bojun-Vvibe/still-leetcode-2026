@@ -2,6 +2,11 @@
 
 [简体中文](README.md) ｜ **English**
 
+[![Validate Table](https://github.com/Bojun-Vvibe/still-leetcode-2026/actions/workflows/validate.yml/badge.svg)](https://github.com/Bojun-Vvibe/still-leetcode-2026/actions/workflows/validate.yml)
+[![Contributors](https://img.shields.io/github/contributors/Bojun-Vvibe/still-leetcode-2026)](https://github.com/Bojun-Vvibe/still-leetcode-2026/graphs/contributors)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Data License CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-blue.svg)](LICENSE-DATA)
+
 > "Any company still asking LeetCode in 2026 isn't worth joining." — Is that true?
 >
 > In the AI era, the *purpose* of interviews is shifting. Does hand-writing algorithms still mean anything? How much is still pure memorization? Which companies have moved to **real-world coding / system design / pairing with AI**? This repo aims to give the developer community a **transparent, crowdsourced** answer.
