@@ -10,7 +10,7 @@ from pathlib import Path
 
 README = Path(__file__).resolve().parent.parent / "README.md"
 
-SECTION_HEADER = "## 📊 公司清单"
+SECTION_PREFIX = "## 📊 公司清单"
 STATUS_TOKENS = {"✅", "🟡", "❌", "❓"}
 DATE_RE = re.compile(r"^\d{4}-\d{2}$")
 EXPECTED_COLS = 7
@@ -36,9 +36,9 @@ def main() -> int:
 
     # 定位「公司清单」章节
     try:
-        start = next(i for i, l in enumerate(lines) if l.strip() == SECTION_HEADER)
+        start = next(i for i, l in enumerate(lines) if l.strip().startswith(SECTION_PREFIX))
     except StopIteration:
-        print(f"❌ 找不到章节标题：{SECTION_HEADER}")
+        print(f"❌ 找不到章节标题：{SECTION_PREFIX}")
         return 1
 
     # 收集该章节内的表格行（到下一个 ## 标题为止）
