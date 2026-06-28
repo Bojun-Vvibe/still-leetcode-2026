@@ -1,0 +1,24 @@
+name: 校验公司清单表格
+
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - "scripts/validate_table.py"
+      - ".github/workflows/validate.yml"
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "scripts/validate_table.py"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: 校验 README 表格格式
+        run: python3 scripts/validate_table.py

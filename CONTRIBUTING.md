@@ -45,6 +45,16 @@
 
 不会用 Git？没关系——用 [📝 提交面试经历 Issue 模板](../../issues/new?template=submit-interview.yml) 填一下，维护者会帮你录入。
 
+## 自动校验
+
+提 PR 后，GitHub Action 会自动检查表格格式（列数、`✅/🟡/❌/❓` 标记、`YYYY-MM` 时间等）。你也可以在本地先跑一遍：
+
+```bash
+python3 scripts/validate_table.py
+```
+
+绿勾通过即可合并；红叉会指出具体哪一行有问题。
+
 ## 行为准则
 
 参与本项目即表示你同意遵守 [行为准则](CODE_OF_CONDUCT.md)。
