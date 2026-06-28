@@ -1,0 +1,83 @@
+name: 📝 提交面试经历
+description: 不想直接改 Markdown？填这个表单，维护者会帮你录入清单。
+title: "[公司] "
+labels: ["面试经历", "待录入"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢贡献！请只填写**亲历或可靠来源**的信息，**不要泄露具体面试题**，尊重 NDA。
+        信息会被整理进 README 的公司清单。
+  - type: input
+    id: company
+    attributes:
+      label: 公司名
+      description: 可注明部门，如「字节·抖音」。初创可加「(初创)」。
+      placeholder: 例：美团
+    validations:
+      required: true
+  - type: dropdown
+    id: asks_lc
+    attributes:
+      label: 是否面 LeetCode（纯算法）？
+      options:
+        - "✅ 仍以 LC 算法为主"
+        - "🟡 部分 / 看岗位"
+        - "❌ 基本不考纯算法"
+        - "❓ 不确定"
+    validations:
+      required: true
+  - type: input
+    id: format
+    attributes:
+      label: 面试形式
+      placeholder: 例：现场手写 + OA / 系统设计 + 实战项目 / AI 结对
+    validations:
+      required: true
+  - type: input
+    id: difficulty
+    attributes:
+      label: 难度
+      placeholder: 例：中-难（不适用填 —）
+  - type: input
+    id: ai_policy
+    attributes:
+      label: 面试中 AI 工具政策
+      description: 是否允许用 Copilot / ChatGPT / 查文档？这是 2026 年的关键信息。
+      placeholder: 例：面试中禁用 AI / 鼓励用 Copilot / 允许查文档 / 未知
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: 信息来源
+      options:
+        - 亲历
+        - 朋友 / 同事一手转述
+        - 内推 / 面经
+        - 社区分享
+        - 传闻（不确定）
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: 信息对应时间
+      description: 你这次面试 / 了解到信息的时间点。
+      placeholder: 例：2026-06
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: 补充说明（选填）
+      description: 任何有助于理解的背景。请勿贴原题、勿写出可识别个人的信息。
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: 确认
+      options:
+        - label: 我确认以上信息真实，且未泄露具体面试题或违反 NDA。
+          required: true
+        - label: 我已阅读并同意 [行为准则](../blob/main/CODE_OF_CONDUCT.md)。
+          required: true
